@@ -1,0 +1,56 @@
+﻿body
+{
+      margin:0px; padding:0px;
+      font-family:Times New Roman Verdana;
+}
+td
+{
+    text-align: center;
+}
+
+.topTable
+{
+    background-color:black;
+    color:White;
+    padding:0px;
+    
+}
+.topTable td
+{
+    border: 0px solid red;
+    padding:3px;
+}
+.topTable .mainPage
+{
+    font-weight: bold;
+    border-top: 2px solid blue;
+}
+
+.topA
+{
+    text-decoration:none; color:White;
+}
+.topA:hover
+{
+    text-decoration:underline;
+}
+.botomTable
+{
+    
+   text-align:center;
+   text-decoration:none;
+  
+ }
+ .topTable td
+{
+    border: 0px solid red;
+    padding:3px;
+}
+.botomA
+{
+    text-decoration:none;
+}
+.botomA:hover
+{
+    text-decoration:underline;
+}
