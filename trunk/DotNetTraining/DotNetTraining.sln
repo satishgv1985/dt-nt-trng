@@ -49,6 +49,26 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "budda_tasks", "budda_tasks\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "naveen_tasks", "naveen_tasks\naveen_tasks.csproj", "{118D8653-B165-46CF-94EB-A61F4C7B606E}"
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "amit_tasks", "amit_tasks\", "{EFC1EF99-714F-449A-B8EA-3545EC0C1AEB}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/amit_tasks"
+		Debug.AspNetCompiler.PhysicalPath = "amit_tasks\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\amit_tasks\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/amit_tasks"
+		Release.AspNetCompiler.PhysicalPath = "amit_tasks\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\amit_tasks\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49384"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +95,10 @@ Global
 		{118D8653-B165-46CF-94EB-A61F4C7B606E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{118D8653-B165-46CF-94EB-A61F4C7B606E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{118D8653-B165-46CF-94EB-A61F4C7B606E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFC1EF99-714F-449A-B8EA-3545EC0C1AEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFC1EF99-714F-449A-B8EA-3545EC0C1AEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFC1EF99-714F-449A-B8EA-3545EC0C1AEB}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFC1EF99-714F-449A-B8EA-3545EC0C1AEB}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
