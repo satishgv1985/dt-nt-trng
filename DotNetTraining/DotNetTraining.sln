@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetTraining", "DotNetTra
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AspWebsite", "AspWebsite\", "{078FA37D-C483-4AC7-BF94-AAB9720A1364}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/AspWebsite"
 		Debug.AspNetCompiler.PhysicalPath = "AspWebsite\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\AspWebsite\"
@@ -26,7 +26,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AspWebsite", "AspWebsite\",
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Assignments", "Assignments\", "{B24D3892-E9E5-4B00-ACA8-2295DA6ED91D}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/Assignments"
 		Debug.AspNetCompiler.PhysicalPath = "Assignments\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Assignments\"
