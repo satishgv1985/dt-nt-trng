@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace google_login_page {
+namespace google_page_1111 {
     
     
     public partial class _Default {
