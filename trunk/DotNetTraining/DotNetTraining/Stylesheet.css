@@ -1,0 +1,20 @@
+﻿body
+{
+}
+td
+{
+	font-size: 20px;
+	color: White;
+}
+span
+{
+	color: Red;
+}
+
+ul
+{
+}
+ul li
+{
+	list-style-type: square;
+}

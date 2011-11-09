@@ -11,6 +11,6 @@
 namespace google_login_page {
     
     
-    public partial class _Default {
+    public partial class news {
     }
 }

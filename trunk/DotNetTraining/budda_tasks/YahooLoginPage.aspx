@@ -7,34 +7,33 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="silver" style="border:1px solid gray;">
-        <tr >
-            <td style="width:"90%">
-                <asp:Image runat="server" AlternateText="YahooImage"/>
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="silver" style="border: 1px solid gray;">
+        <tr>
+            <td style="width: 90%">
+                <asp:Image runat="server" AlternateText="YahooImage" />
             </td>
             <td align="right">
-                Yahoo 
+                Yahoo
             </td>
-            <td align="right"  >
-            |
+            <td align="right">
+                |
             </td>
             <td>
                 Help
             </td>
         </tr>
     </table>
-   
-    <table  cellpadding="0" cellspacing="0" border="1"  width ="100%"style="border: 1px solid balck;">
+    <table cellpadding="0" cellspacing="0" border="1" width="100%" style="border: 1px solid balck;">
         <tr>
             <td>
-                <table >
+                <table>
                     <tr>
-                        <td colspan="3">
+                        <td colspan="4">
                             With a Yahoo Account,get free email and other leading web Services
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="3" width:"100%">
+                        <td colspan="4" width="100%">
                             <hr />
                         </td>
                     </tr>
@@ -53,13 +52,14 @@
                         <td>
                             Sex:
                         </td>
-                        <td>
+                        <td colspan="3">
                             <asp:DropDownList ID="ddlSex" runat="server">
                                 <asp:ListItem>- Select One -</asp:ListItem>
                                 <asp:ListItem>Male</asp:ListItem>
                                 <asp:ListItem>Female</asp:ListItem>
                             </asp:DropDownList>
                         </td>
+                        
                     </tr>
                     <tr>
                         <td>
@@ -93,7 +93,7 @@
                         <td>
                             Country:
                         </td>
-                        <td>
+                        <td colspan="3">
                             <asp:DropDownList ID="ddlCountry" runat="server">
                                 <asp:ListItem>- Select Country -</asp:ListItem>
                                 <asp:ListItem>India</asp:ListItem>
@@ -108,7 +108,7 @@
                             </asp:DropDownList>
                         </td>
                     </tr>
-                    </table>
+                </table>
                 <table class="ID">
                     <tr>
                         <td colspan="3" align="left">
@@ -228,7 +228,6 @@
             </td>
         </tr>
     </table>
-    
     </form>
 </body>
 </html>
