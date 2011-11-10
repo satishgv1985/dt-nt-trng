@@ -50,10 +50,28 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="cssClass.aspx" />
+    <Content Include="CssClass2.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="firefox.png" />
+    <Content Include="gmail.aspx" />
+    <Content Include="google.png" />
+    <Content Include="gradientfromtop.gif" />
+    <Content Include="images\error.png" />
+    <Content Include="images\tableBGimage.png" />
+    <Content Include="images\yahoo.gif" />
+    <Content Include="JavaScriptBrowser.aspx" />
+    <Content Include="javascriptbrowseropera.aspx" />
+    <Content Include="JavaScriptClass.aspx" />
+    <Content Include="jsYahooRegistration.aspx" />
+    <Content Include="mgyhp_sm.png" />
+    <Content Include="news.aspx" />
+    <Content Include="Orkut.aspx" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="SearchPageStyleSheet.css" />
+    <Content Include="Stylesheet.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -61,8 +79,22 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="YahooRegPage.aspx" />
+    <Content Include="yahooStyles.css" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cssClass.aspx.cs">
+      <DependentUpon>cssClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cssClass.aspx.designer.cs">
+      <DependentUpon>cssClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CssClass2.aspx.cs">
+      <DependentUpon>CssClass2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CssClass2.aspx.designer.cs">
+      <DependentUpon>CssClass2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Default.aspx</DependentUpon>
@@ -70,7 +102,55 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="gmail.aspx.cs">
+      <DependentUpon>gmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gmail.aspx.designer.cs">
+      <DependentUpon>gmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JavaScriptBrowser.aspx.cs">
+      <DependentUpon>JavaScriptBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JavaScriptBrowser.aspx.designer.cs">
+      <DependentUpon>JavaScriptBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="javascriptbrowseropera.aspx.cs">
+      <DependentUpon>javascriptbrowseropera.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="javascriptbrowseropera.aspx.designer.cs">
+      <DependentUpon>javascriptbrowseropera.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JavaScriptClass.aspx.cs">
+      <DependentUpon>JavaScriptClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JavaScriptClass.aspx.designer.cs">
+      <DependentUpon>JavaScriptClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jsYahooRegistration.aspx.cs">
+      <DependentUpon>jsYahooRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jsYahooRegistration.aspx.designer.cs">
+      <DependentUpon>jsYahooRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="news.aspx.cs">
+      <DependentUpon>news.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="news.aspx.designer.cs">
+      <DependentUpon>news.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Orkut.aspx.cs">
+      <DependentUpon>Orkut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Orkut.aspx.designer.cs">
+      <DependentUpon>Orkut.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="YahooRegPage.aspx.cs">
+      <DependentUpon>YahooRegPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YahooRegPage.aspx.designer.cs">
+      <DependentUpon>YahooRegPage.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
