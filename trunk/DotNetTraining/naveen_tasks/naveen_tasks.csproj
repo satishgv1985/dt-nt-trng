@@ -62,7 +62,6 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Yahoo.aspx" />
-    <Content Include="YAHOOASP.NET.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Default.aspx.cs">
