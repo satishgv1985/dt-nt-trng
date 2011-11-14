@@ -4,13 +4,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style type="text/css">
+        
+    </style>
+    <link href="YahooStyleSheet.css" type="text/css" rel="Stylesheet" />
 </head>
-<body style="margin:2px auto; width:600px;">
+<body style="margin: 2px auto; width: 600px;">
     <form id="form1" runat="server">
-    <table cellpadding="0" cellspacing="0" width="100%" border="0">
+    <table class="toptable" cellpadding="0" cellspacing="0" width="100%" border="0">
         <tr>
             <td>
-                <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="silver" style="border: 1px solid gray;">
+                <table class="image" width="100%" cellpadding="0" cellspacing="0" border="0" style="border: 1px solid gray;">
                     <tr>
                         <td style="width: 90%">
                             <asp:Image ID="Image1" runat="server" AlternateText="YahooImage" />

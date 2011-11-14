@@ -15,7 +15,6 @@
             color: lightGray;
         }
     </style>
-
     <script type="text/javascript">
         function focusText(element) {
             document.getElementById(element).value = '';
@@ -49,7 +48,7 @@
             //if special chars found return true else return false
             var iChars = "!@#$%^&*()+=-[]\\\';,./{}|\":<>?";
             for (var i = 0; i < str.length; i++) {
-                if (iChars.indexOf(str.charAt(i)) != -1) {                    
+                if (iChars.indexOf(str.charAt(i)) != -1) {
                     return true;
                 }
             }
@@ -57,7 +56,6 @@
         }
         
     </script>
-
     <link href="yahooStyles.css" type="text/css" rel="Stylesheet" />
 </head>
 <body>
@@ -103,13 +101,14 @@
                             Name
                         </td>
                         <td>
+
                             <input type="text" value="First Name" id="firstName" class="lightColorText" onfocus="javascript:focusText('firstName')"
                                 onblur="javascript:blurText()" />
                             <input type="text" value="last name" id="lastName" class="lightColorText" onfocus="javascript:focusText('lastName')"
                                 onblur="javascript:blurTextLastName()" />
-                            <span style="color:Red; font-size: 12px; visibility: hidden;" id="errorText">
-                                <img src="images/error.png" /> Only letters, spaces, hyphens and apostrophes are allowed
-                            </span>
+                            <span style="color: Red; font-size: 12px; visibility: hidden;" id="errorText">
+                                <img src="images/error.png" />
+                                Only letters, spaces, hyphens and apostrophes are allowed </span>
                         </td>
                     </tr>
                     <tr>
@@ -163,17 +162,15 @@
                             </select>
                         </td>
                     </tr>
-                </table>
-                <br />
-                <br />
-                <table border="0" width="50%">
                     <tr>
-                        <td style="text-align: left">
+                        <td colspan="2">
                             <span style="color: green">select an Id and Password</span>
                             <hr />
                         </td>
                     </tr>
                 </table>
+                <br />
+                <br />
                 <table>
                     <tr>
                         <td>
