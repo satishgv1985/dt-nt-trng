@@ -1,6 +1,11 @@
-﻿body {
-}
-.Account
+﻿body
 {
-    text-align:center;
+}
+.toptable
+{
+   table-layout:auto
+}
+.image
+{
+    color: Silver;
 }
