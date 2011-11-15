@@ -9,6 +9,14 @@
         {
             text-align: center;
         }
+        .style1
+        {
+            width: 846px;
+        }
+        .style2
+        {
+            width: 587px;
+        }
     </style>
 </head>
 <body>
@@ -142,7 +150,7 @@
         </table>
         <table>
         <tr>
-        <td height="640">
+        <td height="640" class="style1">
         
         </td>
         </tr>
@@ -150,9 +158,9 @@
    
     <table width="100%">
         <tr>
-            <td>
+            <td class="style2">
                 <a href="http://www.w3schools.com">
-                    <img style="border: 0" src="w3schoolscom_gray.gif" alt="W3Schools.com" /></a>
+                    <img style="border: 0" src="w3schoolscom_gray.gif" alt="W3Schools.com"/></a>
             </td>
             <td>
                 <a href="">REPORT ERROR</a> |
