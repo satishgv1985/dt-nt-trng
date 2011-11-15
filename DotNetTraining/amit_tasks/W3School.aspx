@@ -9,135 +9,146 @@
         {
             text-align: center;
         }
-      
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <table>
-            <tr>
-                <th>
-                    WEB HOSTING
-                </th>
-            </tr>
+   
+        <table align="right">
             <tr>
                 <td>
-                    <a href=" ">Best Web Hosting</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href=" ">PHP MySQL Hosting</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href=" ">Best Hosting Coupons</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href=" ">UK Reseller Hosting</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href=" ">Cloud Hosting</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href=" ">Top Web Hosting</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href=" ">$7.95/mo SEO Hosting</a>
+                    <table>
+                        <tr>
+                            <th>
+                                WEB HOSTING
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href=" ">Best Web Hosting</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href=" ">PHP MySQL Hosting</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href=" ">Best Hosting Coupons</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href=" ">UK Reseller Hosting</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href=" ">Cloud Hosting</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href=" ">Top Web Hosting</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href=" ">$7.95/mo SEO Hosting</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <th>
+                                WEB BUILDING
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="">XML Editor - Free Trial!</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="">FREE Website BUILDER</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href=" ">Free Website Templates</a>
+                                <br />
+                                <a href=" ">Free WordPress Themes</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <th>
+                                W3SCHOOLS EXAMS
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="">Get Certified in:<br />
+                                    HTML, CSS, JavaScript,<br />
+                                    XML, PHP, and ASP</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <th>
+                                W3SCHOOLS BOOKS
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="">New Books:<br />
+                                    HTML, CSS<br />
+                                    JavaScript, and Ajax</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <th>
+                                STATISTICS
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="">Browser Statistics</a><br />
+                                <a href="">Browser OS</a><br />
+                                <a href="">Browser Display</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <th>
+                                SHARE THIS PAGE
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href=" ">Share with &raquo;</a>
+                            </td>
+                        </tr>
+                    </table>
                 </td>
             </tr>
         </table>
         <table>
-            <tr>
-                <th>
-                    WEB BUILDING
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    <a href="">XML Editor - Free Trial!</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="">FREE Website BUILDER</a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href=" ">Free Website Templates</a>
-                    <br />
-                    <a href=" ">Free WordPress Themes</a>
-                </td>
-            </tr>
+        <tr>
+        <td height="640">
+        
+        </td>
+        </tr>
         </table>
-        <table>
-            <tr>
-                <th>
-                    W3SCHOOLS EXAMS
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    <a href="">Get Certified in:<br />
-                        HTML, CSS, JavaScript,<br />
-                        XML, PHP, and ASP</a>
-                </td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <th>
-                    W3SCHOOLS BOOKS
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    <a href="">New Books:<br />
-                        HTML, CSS<br />
-                        JavaScript, and Ajax</a>
-                </td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <th>
-                    STATISTICS
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    <a href="">Browser Statistics</a><br />
-                    <a href="">Browser OS</a><br />
-                    <a href="">Browser Display</a>
-                </td>
-            </tr>
-        </table>
-        <table>
-            <tr>
-                <th>
-                    SHARE THIS PAGE
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    <a href=" ">Share with &raquo;</a>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <br />
-    <table>
+   
+    <table width="100%">
         <tr>
             <td>
                 <a href="http://www.w3schools.com">
@@ -175,6 +186,7 @@
             </td>
         </tr>
     </table>
+    
     </form>
 </body>
 </html>
