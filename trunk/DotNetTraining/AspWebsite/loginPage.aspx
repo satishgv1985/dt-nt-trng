@@ -60,8 +60,9 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <asp:Button ID="btnSignIn" runat="server" Text="SignIn" OnClick="btnSignIn_Click" />
-                    <asp:LinkButton ID="lbSignIn" runat="server" Text="SignIn"></asp:LinkButton>
+                    <asp:Button ID="btnSignIn"  runat="server" Text="SignIn" OnClick="btnSignIn_Click" />
+                   
+                    <asp:LinkButton ID="lbSignIn" runat="server" Text="SignIn" PostBackUrl="~/Welcome.aspx"></asp:LinkButton>
                     <asp:HyperLink ID="hlSignIn" runat="server" NavigateUrl="http://www.google.com" Text="Sign In(Hyperlink)"></asp:HyperLink>
                 </td>
             </tr>
