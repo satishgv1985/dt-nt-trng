@@ -24,6 +24,8 @@
                             <asp:HyperLink ID="hlPhp" runat="server" Text="PHP" NavigateUrl="~/Php.aspx"></asp:HyperLink>
                             <asp:HyperLink ID="hlSql" runat="server" Text="SQL" NavigateUrl="~/Sql.aspx"></asp:HyperLink>
                             <asp:HyperLink ID="hlMore" runat="server" Text="MORE...." NavigateUrl="~/More.aspx"></asp:HyperLink>
+                            <asp:Label ID="lblName" runat="server" Text="Master Page Text"></asp:Label>
+                            <asp:Label ID="lblReadCPText" runat="server"></asp:Label>
                         </td>
                         <td align="right" style="padding: 20px;">
                             <asp:HyperLink ID="hlReference" runat="server" Text="REFERENCE" NavigateUrl="~/References.aspx"></asp:HyperLink>
@@ -198,9 +200,8 @@
                     </tr>
                     <tr>
                         <td colspan="7">
-                            W3Schools is optimized for learning, testing, and training. Examples might be simplified
-                            to improve reading and basic understanding.<br />
-                            Tutorials, references, and examples are constantly reviewed to avoid errors, but
+                           <p>W3Schools is optimized for learning, testing, and training. Examples might be simplified
+                            to improve reading and basic understanding.</p>Tutorials, references, and examples are constantly reviewed to avoid errors, but
                             we cannot warrant full correctness of all content.<br />
                             While using this site, you agree to have read and accepted our <a href="/about/about_copyright.asp">
                                 terms of use</a> and <a href="/about/about_privacy.asp">privacy policy</a>.<br />

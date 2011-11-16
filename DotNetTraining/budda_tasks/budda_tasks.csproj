@@ -85,12 +85,15 @@
     </Compile>
     <Compile Include="Abt.aspx.cs">
       <DependentUpon>Abt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Asp.aspx.cs">
       <DependentUpon>Asp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="css.aspx.cs">
       <DependentUpon>css.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -101,18 +104,23 @@
     </Compile>
     <Compile Include="Examples.aspx.cs">
       <DependentUpon>Examples.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Forum.aspx.cs">
       <DependentUpon>Forum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Html.aspx.cs">
       <DependentUpon>Html.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Javascript.aspx.cs">
       <DependentUpon>Javascript.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -134,13 +142,16 @@
     </Compile>
     <Compile Include="More.aspx.cs">
       <DependentUpon>More.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Php.aspx.cs">
       <DependentUpon>Php.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="References.aspx.cs">
       <DependentUpon>References.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Site.master.cs">
       <DependentUpon>Site.master</DependentUpon>
@@ -148,12 +159,15 @@
     </Compile>
     <Compile Include="Sql.aspx.cs">
       <DependentUpon>Sql.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="W3Schools.master.cs">
       <DependentUpon>W3Schools.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="XML.aspx.cs">
       <DependentUpon>XML.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="YahooLoginPage.aspx.cs">
       <DependentUpon>YahooLoginPage.aspx</DependentUpon>
