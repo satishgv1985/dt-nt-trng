@@ -51,21 +51,32 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="About.aspx.vb" />
     <Content Include="Abt.aspx" />
     <Content Include="Asp.aspx" />
     <Content Include="css.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="Default.aspx.vb" />
+    <Content Include="GOOGLE.aspx" />
+    <Content Include="Default2.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
     <Content Include="Examples.aspx" />
     <Content Include="Forum.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="google.png" />
+    <Content Include="GoogleStyleSheet.css" />
     <Content Include="Home.aspx" />
     <Content Include="Html.aspx" />
+    <Content Include="Htmldefault.aspx" />
+    <Content Include="Htrmldefaultusercontrol.ascx" />
     <Content Include="Javascript.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Main.aspx" />
     <Content Include="More.aspx" />
     <Content Include="Php.aspx" />
     <Content Include="References.aspx" />
+    <Content Include="Site.master.vb" />
     <Content Include="Sql.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -118,6 +129,13 @@
       <DependentUpon>Html.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Htmldefault.aspx.cs">
+      <DependentUpon>Htmldefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Htrmldefaultusercontrol.ascx.cs">
+      <DependentUpon>Htrmldefaultusercontrol.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Javascript.aspx.cs">
       <DependentUpon>Javascript.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -165,6 +183,10 @@
       <DependentUpon>W3Schools.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="W3SchoolsMasterPage.master.cs">
+      <DependentUpon>W3SchoolsMasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="XML.aspx.cs">
       <DependentUpon>XML.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -185,6 +207,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="W3Schools.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="W3SchoolsMasterPage.master" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
