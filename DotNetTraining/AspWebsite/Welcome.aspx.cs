@@ -17,7 +17,12 @@ public partial class Welcome : System.Web.UI.Page
         //}
 
         //Using Post of accessing values
-        TextBox txtUN = (TextBox)PreviousPage.FindControl("txtUserName");
-        lblUserName.Text = txtUN.Text;
+        //http://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.button.postbackurl.aspx
+       // System.Diagnostics.Debugger.Launch();
+        TextBox txtUN = (TextBox)Page.PreviousPage.FindControl("txtUserName");
+        string ddlValue = ((DropDownList)PreviousPage.FindControl("ddlGender")).SelectedItem.Text;
+        string txtSample = ((TextBox)PreviousPage.FindControl("txtSample")).Text;
+        lblUserName.Text = txtUN.Text+"     "+ddlValue+"    <b>Sample:</b>"+txtSample;
+
     }
 }
