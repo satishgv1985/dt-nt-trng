@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="W3SchoolsMasterPage.master.cs"
+    Inherits="W3SchoolsMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td>
+                            <asp:HyperLink ID="hlHome" runat="server" Text="HOME" NavigateUrl="#"></asp:HyperLink>
+                            <asp:HyperLink ID="hlHtml" runat="server" Text="HTML" NavigateUrl="#"></asp:HyperLink>
+                            <asp:HyperLink ID="hlcss" runat="server" Text="CSS" NavigateUrl="#"></asp:HyperLink>
+                            <asp:HyperLink ID="hlxml" runat="server" Text="XML" NavigateUrl="#"></asp:HyperLink>
+                            <asp:HyperLink ID="hljavascript" runat="server" Text="JAVASCRIPT" NavigateUrl="#"></asp:HyperLink>
+                            <asp:HyperLink ID="hlAsp" runat="server" Text="ASP" NavigateUrl="#"></asp:HyperLink>
+                            <asp:HyperLink ID="hlPhp" runat="server" Text="PHP" NavigateUrl="#"></asp:HyperLink>
+                            <asp:HyperLink ID="hlSql" runat="server" Text="SQL" NavigateUrl="#"></asp:HyperLink>
+                            <asp:HyperLink ID="hlMore" runat="server" Text="MORE...." NavigateUrl="#"></asp:HyperLink>
+                        </td>
+                        <td align="right">
+                            <asp:HyperLink ID="hlReference" runat="server" Text="REFERENCE" NavigateUrl="#"></asp:HyperLink>
+                            <asp:HyperLink ID="hlExample" runat="server" Text="EXAMPLE" NavigateUrl="#"></asp:HyperLink>
+                            <asp:HyperLink ID="hlForum" runat="server" Text="FORUM" NavigateUrl="#"></asp:HyperLink>
+                            <asp:HyperLink ID="hlAbout" runat="server" Text="ABOUT" NavigateUrl="#"></asp:HyperLink>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            <asp:ContentPlaceHolder ID="MasterPage" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>
+                                        WEB HOSTING
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <asp:HyperLink ID="hlBestwebhosting" runat="server" Text="Best Web Hosting" NavigateUrl="#"></asp:HyperLink>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <asp:HyperLink ID="hlPspMysql" runat="server" Text="PSP MySql" NavigateUrl="#"></asp:HyperLink>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
