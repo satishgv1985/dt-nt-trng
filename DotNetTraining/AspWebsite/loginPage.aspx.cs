@@ -12,7 +12,7 @@ public partial class loginPage : System.Web.UI.Page
         if (IsPostBack)
         {
             lblTime.Text = "PostBack Req New time:" + DateTime.Now.ToString();
-            txtUserName.Text = "";
+            //txtUserName.Text = "";
 
         }
         else

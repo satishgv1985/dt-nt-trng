@@ -19,6 +19,7 @@
             <asp:Label ID="lblReadText" runat="server"></asp:Label>
             <asp:Label ID="lblCPdata" runat="server" Text="HTML Default CP"></asp:Label>
                 html default page
+                <asp:Label ID="lblViewState" runat="server"></asp:Label>
             </td>
         </tr>
     </table>

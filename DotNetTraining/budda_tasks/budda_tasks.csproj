@@ -131,6 +131,7 @@
     </Compile>
     <Compile Include="Htmldefault.aspx.cs">
       <DependentUpon>Htmldefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Htrmldefaultusercontrol.ascx.cs">
       <DependentUpon>Htrmldefaultusercontrol.ascx</DependentUpon>
