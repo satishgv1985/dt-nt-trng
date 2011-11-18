@@ -16,5 +16,6 @@ public partial class masterPages_Default : System.Web.UI.Page
         Label lblCP = (Label)Page.Master.FindControl("lblReadCPText");
         if(lblCP!=null)        
         lblCP.Text = lblCPdata.Text;
+        lblViewState.Text = (string)ViewState["user"];
     }
 }

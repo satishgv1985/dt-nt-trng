@@ -9,6 +9,10 @@ public partial class masterPages_MasterPage : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        System.Diagnostics.Debugger.Launch();
+        if (!IsPostBack)
+        {
+            ViewState["user"] = ((TextBox)Page.PreviousPage.FindControl("txtLogin")).Text;
+        }
     }
 }
