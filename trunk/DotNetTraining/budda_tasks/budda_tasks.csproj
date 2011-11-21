@@ -56,11 +56,7 @@
     <Content Include="Asp.aspx" />
     <Content Include="css.aspx" />
     <Content Include="Default.aspx" />
-    <Content Include="Default.aspx.vb" />
     <Content Include="GOOGLE.aspx" />
-    <Content Include="Default2.aspx.vb">
-      <SubType>ASPXCodeBehind</SubType>
-    </Content>
     <Content Include="Examples.aspx" />
     <Content Include="Forum.aspx" />
     <Content Include="Global.asax" />
@@ -76,7 +72,6 @@
     <Content Include="More.aspx" />
     <Content Include="Php.aspx" />
     <Content Include="References.aspx" />
-    <Content Include="Site.master.vb" />
     <Content Include="Sql.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
