@@ -12,7 +12,8 @@ namespace Authentication
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //System.Security.Principal.I
+              
         }
 
         protected void btnSignIn_Click(object sender, EventArgs e)
@@ -20,7 +21,7 @@ namespace Authentication
 
            // if (txtUserName.Text == "amit111" && txtPassword.Text == "aaa")
            
-                FormsAuthentication.RedirectFromLoginPage(txtUserName.Text, true);
+                FormsAuthentication.RedirectFromLoginPage(txtUserName.Text, false);
             
             //else
                 lblError.Text = "Invalid user name";
