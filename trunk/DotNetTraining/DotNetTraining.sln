@@ -20,7 +20,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AspWebsite", "AspWebsite\",
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "49290"
+		VWDPort = "49291"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
@@ -49,6 +49,8 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "amit_tasks", "amit_tasks\",
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication", "Authentication\Authentication.csproj", "{0D8C1876-AA6E-44E0-9D7B-67B9F0CA62CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsAuthWithRoles", "FormsAuthWithRoles\FormsAuthWithRoles.csproj", "{FCD716B3-C9C1-4E98-A490-F6ADBB3F70B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -80,6 +82,10 @@ Global
 		{0D8C1876-AA6E-44E0-9D7B-67B9F0CA62CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D8C1876-AA6E-44E0-9D7B-67B9F0CA62CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D8C1876-AA6E-44E0-9D7B-67B9F0CA62CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCD716B3-C9C1-4E98-A490-F6ADBB3F70B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCD716B3-C9C1-4E98-A490-F6ADBB3F70B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCD716B3-C9C1-4E98-A490-F6ADBB3F70B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCD716B3-C9C1-4E98-A490-F6ADBB3F70B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
