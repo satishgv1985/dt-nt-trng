@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <users>
+    <user>
+    <name>amit</name>
+    <number>999</number>
+    </user>
+    <user>
+      <name>buddha1</name>
+    </user>
+  </users>
+</root>
