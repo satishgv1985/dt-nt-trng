@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="E:\DotNetTrainingProjectHost" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="news.aspx" publishTime="11/14/2011 23:28:07" />
+    <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="11/14/2011 23:27:59" />
+    <file relUrl="Scripts/jquery-1.4.1.js" publishTime="11/14/2011 23:27:59" />
+    <file relUrl="gradientfromtop.gif" publishTime="11/14/2011 23:28:07" />
+    <file relUrl="images/yahoo.gif" publishTime="11/14/2011 23:27:33" />
+    <file relUrl="images/error.png" publishTime="11/14/2011 23:27:33" />
+    <file relUrl="yahooStyles.css" publishTime="11/14/2011 23:28:07" />
+    <file relUrl="bin/DotNetTraining.dll" publishTime="11/29/2011 09:21:46" />
+    <file relUrl="CssClass2.aspx" publishTime="11/14/2011 23:28:07" />
+    <file relUrl="JavaScriptBrowser.aspx" publishTime="11/14/2011 23:28:07" />
+    <file relUrl="images/tableBGimage.png" publishTime="11/14/2011 23:27:33" />
+    <file relUrl="bin/DotNetTraining.pdb" publishTime="11/29/2011 09:21:46" />
+    <file relUrl="Stylesheet.css" publishTime="11/14/2011 23:28:07" />
+    <file relUrl="JavaScriptClass.aspx" publishTime="11/14/2011 23:28:07" />
+    <file relUrl="jsYahooRegistration.aspx" publishTime="11/14/2011 23:28:07" />
+    <file relUrl="mgyhp_sm.png" publishTime="11/14/2011 23:28:07" />
+    <file relUrl="YahooRegPage.aspx" publishTime="11/14/2011 23:28:07" />
+    <file relUrl="Orkut.aspx" publishTime="11/14/2011 23:28:07" />
+    <file relUrl="Default.aspx" publishTime="11/14/2011 23:28:07" />
+    <file relUrl="SearchPageStyleSheet.css" publishTime="11/14/2011 23:28:07" />
+    <file relUrl="javascriptbrowseropera.aspx" publishTime="11/14/2011 23:28:07" />
+    <file relUrl="Web.config" publishTime="12/05/2011 10:56:10" />
+    <file relUrl="firefox.png" publishTime="11/14/2011 23:28:07" />
+    <file relUrl="google.png" publishTime="11/14/2011 23:28:07" />
+    <file relUrl="gmail.aspx" publishTime="11/14/2011 23:28:07" />
+    <file relUrl="cssClass.aspx" publishTime="11/14/2011 23:28:07" />
+    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="11/14/2011 23:27:59" />
+  </publishProfile>
+</publishData>

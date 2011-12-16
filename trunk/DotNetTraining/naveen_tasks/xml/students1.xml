@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="yes"?>
+<students>
+  <student class="8">
+    <name>satish</name>
+    <id>23</id>
+  </student>
+  <student class="5">
+    <name>amit</name>
+    <id>54</id>
+  </student>
+</students>

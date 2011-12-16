@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<students>
+  <student>
+    <rollNo>A1</rollNo>
+    <name>Amit</name>
+    <marks>90</marks>
+  </student>
+  <student>
+    <rollNo>A2</rollNo>
+    <name>Budhha</name>
+    <marks>35</marks>
+  </student>
+</students>

@@ -25,15 +25,22 @@ public partial class caching_homePage : System.Web.UI.Page
         //time based dependency -- sliding expiration
         //Cache.Insert("name", "satish", null, Cache.NoAbsoluteExpiration, TimeSpan.FromSeconds(15));
      
-        //key based dependency
-        Cache["employee"] = "1";
-        //Create the array of cache key item names
-        string[] keys = new String[1];
-        keys[0] = "employee";
-        CacheDependency cdKey = new CacheDependency(null,keys);
-        CacheItemRemovedCallback circbEmployeeRemoved = new CacheItemRemovedCallback(employeeRemoved);
-        Cache.Insert("name", "satish",cdKey,Cache.NoAbsoluteExpiration,Cache.NoSlidingExpiration,CacheItemPriority.Default,circbEmployeeRemoved);
+        //key based dependency with cache remove call back
+        //Cache["employee"] = "1";
+        ////Create the array of cache key item names
+        //string[] keys = new String[1];
+        //keys[0] = "employee";
+        //CacheDependency cdKey = new CacheDependency(null,keys);
+        //CacheItemRemovedCallback circbEmployeeRemoved = new CacheItemRemovedCallback(employeeRemoved);
+        //Cache.Insert("name", "satish",cdKey,Cache.NoAbsoluteExpiration,Cache.NoSlidingExpiration,CacheItemPriority.Default,circbEmployeeRemoved);
         
+
+        //key based dependency
+        Cache["userNo"] = "1";
+        string[] keys = new string[1];
+        keys[0] = "userNo";
+        CacheDependency cdKeyBasedDependency = new CacheDependency(null, keys);
+        Cache.Insert("name", "satish", cdKeyBasedDependency);
 
     }
 

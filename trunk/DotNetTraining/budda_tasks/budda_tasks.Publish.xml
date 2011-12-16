@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="E:\DotNetTrainingWebsiteHost" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Global.asax" publishTime="11/14/2011 23:26:57" />
+    <file relUrl="Site.master" publishTime="11/14/2011 23:26:57" />
+    <file relUrl="bin/budda_tasks.pdb" publishTime="12/05/2011 10:43:49" />
+    <file relUrl="Php.aspx" publishTime="11/15/2011 22:59:38" />
+    <file relUrl="Web.config" publishTime="12/05/2011 10:43:49" />
+    <file relUrl="Javascript.aspx" publishTime="11/15/2011 22:59:38" />
+    <file relUrl="About.aspx" publishTime="11/14/2011 23:26:57" />
+    <file relUrl="Main.aspx" publishTime="11/15/2011 22:59:38" />
+    <file relUrl="Forum.aspx" publishTime="11/15/2011 22:59:38" />
+    <file relUrl="YahooLoginPage.aspx" publishTime="11/14/2011 23:26:57" />
+    <file relUrl="Htmldefault.aspx" publishTime="11/19/2011 23:43:26" />
+    <file relUrl="Examples.aspx" publishTime="11/15/2011 22:59:38" />
+    <file relUrl="More.aspx" publishTime="11/15/2011 22:59:38" />
+    <file relUrl="Asp.aspx" publishTime="11/15/2011 22:59:38" />
+    <file relUrl="W3SchoolsMasterPage.master" publishTime="11/19/2011 23:43:26" />
+    <file relUrl="bin/budda_tasks.dll" publishTime="12/05/2011 10:43:49" />
+    <file relUrl="GOOGLE.aspx" publishTime="11/19/2011 23:43:26" />
+    <file relUrl="Default.aspx" publishTime="11/19/2011 23:43:26" />
+    <file relUrl="css.aspx" publishTime="11/15/2011 22:59:38" />
+    <file relUrl="Home.aspx" publishTime="11/15/2011 22:59:38" />
+    <file relUrl="YahooStyleSheet.css" publishTime="11/14/2011 23:26:57" />
+    <file relUrl="MasterPages/W3Schools.Master" publishTime="11/15/2011 22:59:38" />
+    <file relUrl="Abt.aspx" publishTime="11/15/2011 22:59:38" />
+    <file relUrl="Sql.aspx" publishTime="11/15/2011 22:59:38" />
+    <file relUrl="W3Schools.master" publishTime="11/15/2011 22:59:38" />
+    <file relUrl="Html.aspx" publishTime="11/15/2011 22:59:38" />
+    <file relUrl="google.png" publishTime="11/19/2011 23:43:26" />
+    <file relUrl="XML.aspx" publishTime="11/15/2011 22:59:38" />
+    <file relUrl="GoogleStyleSheet.css" publishTime="11/19/2011 23:43:26" />
+    <file relUrl="Htrmldefaultusercontrol.ascx" publishTime="11/19/2011 23:43:26" />
+    <file relUrl="Login.aspx" publishTime="11/14/2011 23:26:57" />
+    <file relUrl="References.aspx" publishTime="11/15/2011 22:59:38" />
+  </publishProfile>
+</publishData>

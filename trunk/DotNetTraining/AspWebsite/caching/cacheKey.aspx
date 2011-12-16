@@ -9,6 +9,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
+    on page load we remove the cached item of "userNo"
     
     </div>
     </form>
