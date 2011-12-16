@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<students>
+  <student class="8">
+    <name>Satish</name>
+    <maths>80</maths>
+    <physics>60</physics>
+  </student>
+  <student class="6">
+    <name>Buddha</name>
+    <maths>90</maths>
+    <physics>50</physics>
+  </student>
+  <student class="9">
+    <name>Naveen</name>
+    <maths>70</maths>
+    <physics>60</physics>
+  </student>
+  <student class="8">
+    <name>Amit</name>
+    <maths>90</maths>
+    <physics>80</physics>
+  </student>
+</students>

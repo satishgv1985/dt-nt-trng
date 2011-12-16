@@ -10,5 +10,6 @@ public partial class caching_cacheKey : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         Cache.Remove("employee");
+        Cache.Remove("userNo");
     }
 }
