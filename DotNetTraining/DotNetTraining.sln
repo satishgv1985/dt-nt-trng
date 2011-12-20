@@ -54,6 +54,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsAuthWithRoles", "Forms
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLHandling", "XMLHandling\XMLHandling.csproj", "{78B2E217-3317-4A7E-B0C7-95E2C2E8755E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AjaxClasses", "AjaxClasses\AjaxClasses.csproj", "{57650292-3B04-4637-A604-1536C466D7D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -92,6 +94,10 @@ Global
 		{78B2E217-3317-4A7E-B0C7-95E2C2E8755E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78B2E217-3317-4A7E-B0C7-95E2C2E8755E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78B2E217-3317-4A7E-B0C7-95E2C2E8755E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57650292-3B04-4637-A604-1536C466D7D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57650292-3B04-4637-A604-1536C466D7D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57650292-3B04-4637-A604-1536C466D7D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57650292-3B04-4637-A604-1536C466D7D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
