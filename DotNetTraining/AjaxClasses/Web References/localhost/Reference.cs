@@ -33,6 +33,14 @@ namespace AjaxClasses.localhost {
         
         private System.Threading.SendOrPostCallback GetCustomerNameByIdOperationCompleted;
         
+        private System.Threading.SendOrPostCallback additionOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback subtractionOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback multiplicationOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback divideOperationCompleted;
+        
         private bool useDefaultCredentialsSetExplicitly;
         
         /// <remarks/>
@@ -76,6 +84,18 @@ namespace AjaxClasses.localhost {
         
         /// <remarks/>
         public event GetCustomerNameByIdCompletedEventHandler GetCustomerNameByIdCompleted;
+        
+        /// <remarks/>
+        public event additionCompletedEventHandler additionCompleted;
+        
+        /// <remarks/>
+        public event subtractionCompletedEventHandler subtractionCompleted;
+        
+        /// <remarks/>
+        public event multiplicationCompletedEventHandler multiplicationCompleted;
+        
+        /// <remarks/>
+        public event divideCompletedEventHandler divideCompleted;
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://DotNetTraining.org/HelloWorld", RequestNamespace="http://DotNetTraining.org/", ResponseNamespace="http://DotNetTraining.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -130,6 +150,130 @@ namespace AjaxClasses.localhost {
             if ((this.GetCustomerNameByIdCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.GetCustomerNameByIdCompleted(this, new GetCustomerNameByIdCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://DotNetTraining.org/addition", RequestNamespace="http://DotNetTraining.org/", ResponseNamespace="http://DotNetTraining.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public int addition(int num1, int num2) {
+            object[] results = this.Invoke("addition", new object[] {
+                        num1,
+                        num2});
+            return ((int)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void additionAsync(int num1, int num2) {
+            this.additionAsync(num1, num2, null);
+        }
+        
+        /// <remarks/>
+        public void additionAsync(int num1, int num2, object userState) {
+            if ((this.additionOperationCompleted == null)) {
+                this.additionOperationCompleted = new System.Threading.SendOrPostCallback(this.OnadditionOperationCompleted);
+            }
+            this.InvokeAsync("addition", new object[] {
+                        num1,
+                        num2}, this.additionOperationCompleted, userState);
+        }
+        
+        private void OnadditionOperationCompleted(object arg) {
+            if ((this.additionCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.additionCompleted(this, new additionCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://DotNetTraining.org/subtraction", RequestNamespace="http://DotNetTraining.org/", ResponseNamespace="http://DotNetTraining.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public int subtraction(int num1, int num2) {
+            object[] results = this.Invoke("subtraction", new object[] {
+                        num1,
+                        num2});
+            return ((int)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void subtractionAsync(int num1, int num2) {
+            this.subtractionAsync(num1, num2, null);
+        }
+        
+        /// <remarks/>
+        public void subtractionAsync(int num1, int num2, object userState) {
+            if ((this.subtractionOperationCompleted == null)) {
+                this.subtractionOperationCompleted = new System.Threading.SendOrPostCallback(this.OnsubtractionOperationCompleted);
+            }
+            this.InvokeAsync("subtraction", new object[] {
+                        num1,
+                        num2}, this.subtractionOperationCompleted, userState);
+        }
+        
+        private void OnsubtractionOperationCompleted(object arg) {
+            if ((this.subtractionCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.subtractionCompleted(this, new subtractionCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://DotNetTraining.org/multiplication", RequestNamespace="http://DotNetTraining.org/", ResponseNamespace="http://DotNetTraining.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public int multiplication(int num1, int num2) {
+            object[] results = this.Invoke("multiplication", new object[] {
+                        num1,
+                        num2});
+            return ((int)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void multiplicationAsync(int num1, int num2) {
+            this.multiplicationAsync(num1, num2, null);
+        }
+        
+        /// <remarks/>
+        public void multiplicationAsync(int num1, int num2, object userState) {
+            if ((this.multiplicationOperationCompleted == null)) {
+                this.multiplicationOperationCompleted = new System.Threading.SendOrPostCallback(this.OnmultiplicationOperationCompleted);
+            }
+            this.InvokeAsync("multiplication", new object[] {
+                        num1,
+                        num2}, this.multiplicationOperationCompleted, userState);
+        }
+        
+        private void OnmultiplicationOperationCompleted(object arg) {
+            if ((this.multiplicationCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.multiplicationCompleted(this, new multiplicationCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://DotNetTraining.org/divide", RequestNamespace="http://DotNetTraining.org/", ResponseNamespace="http://DotNetTraining.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public int divide(int num1, int num2) {
+            object[] results = this.Invoke("divide", new object[] {
+                        num1,
+                        num2});
+            return ((int)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void divideAsync(int num1, int num2) {
+            this.divideAsync(num1, num2, null);
+        }
+        
+        /// <remarks/>
+        public void divideAsync(int num1, int num2, object userState) {
+            if ((this.divideOperationCompleted == null)) {
+                this.divideOperationCompleted = new System.Threading.SendOrPostCallback(this.OndivideOperationCompleted);
+            }
+            this.InvokeAsync("divide", new object[] {
+                        num1,
+                        num2}, this.divideOperationCompleted, userState);
+        }
+        
+        private void OndivideOperationCompleted(object arg) {
+            if ((this.divideCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.divideCompleted(this, new divideCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -200,6 +344,110 @@ namespace AjaxClasses.localhost {
             get {
                 this.RaiseExceptionIfNecessary();
                 return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.1")]
+    public delegate void additionCompletedEventHandler(object sender, additionCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.1")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class additionCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal additionCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public int Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((int)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.1")]
+    public delegate void subtractionCompletedEventHandler(object sender, subtractionCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.1")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class subtractionCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal subtractionCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public int Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((int)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.1")]
+    public delegate void multiplicationCompletedEventHandler(object sender, multiplicationCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.1")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class multiplicationCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal multiplicationCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public int Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((int)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.1")]
+    public delegate void divideCompletedEventHandler(object sender, divideCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.1")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class divideCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal divideCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public int Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((int)(this.results[0]));
             }
         }
     }
