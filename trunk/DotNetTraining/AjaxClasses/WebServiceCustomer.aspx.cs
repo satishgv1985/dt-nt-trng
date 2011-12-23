@@ -24,5 +24,33 @@ namespace AjaxClasses
             lblName.Text += myCust.HelloWorld();
  
         }
+
+        protected void btnAdd_Click(object sender, EventArgs e)
+        {
+            localhost.MyCustomerService mycust = new localhost.MyCustomerService();
+            int result = mycust.addition(Convert.ToInt32(txtNum1.Text), Convert.ToInt32(txtNum2.Text));
+            txtResult.Text = Convert.ToString(result);
+        }
+
+        protected void btnSub_Click(object sender, EventArgs e)
+        {
+            localhost.MyCustomerService mycust = new localhost.MyCustomerService();
+            int result = mycust.subtraction(Convert.ToInt32(txtNum1.Text), Convert.ToInt32(txtNum2.Text));
+            txtResult.Text = Convert.ToString(result);
+        }
+
+        protected void btnMul_Click(object sender, EventArgs e)
+        {
+            localhost.MyCustomerService mycust = new localhost.MyCustomerService();
+            int result = mycust.multiplication(Convert.ToInt32(txtNum1.Text), Convert.ToInt32(txtNum2.Text));
+            txtResult.Text = Convert.ToString(result);
+        }
+
+        protected void btnDiv_Click(object sender, EventArgs e)
+        {
+            localhost.MyCustomerService mycust = new localhost.MyCustomerService();
+            int result = mycust.divide(Convert.ToInt32(txtNum1.Text), Convert.ToInt32(txtNum2.Text));
+            txtResult.Text = Convert.ToString(result);
+        }
     }
 }

@@ -27,6 +27,66 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="addition">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="num1" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="num2" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="additionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="additionResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="subtraction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="num1" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="num2" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="subtractionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="subtractionResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="multiplication">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="num1" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="num2" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="multiplicationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="multiplicationResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="divide">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="num1" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="num2" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="divideResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="divideResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
     </s:schema>
   </wsdl:types>
   <wsdl:message name="HelloWorldSoapIn">
@@ -41,6 +101,30 @@
   <wsdl:message name="GetCustomerNameByIdSoapOut">
     <wsdl:part name="parameters" element="tns:GetCustomerNameByIdResponse" />
   </wsdl:message>
+  <wsdl:message name="additionSoapIn">
+    <wsdl:part name="parameters" element="tns:addition" />
+  </wsdl:message>
+  <wsdl:message name="additionSoapOut">
+    <wsdl:part name="parameters" element="tns:additionResponse" />
+  </wsdl:message>
+  <wsdl:message name="subtractionSoapIn">
+    <wsdl:part name="parameters" element="tns:subtraction" />
+  </wsdl:message>
+  <wsdl:message name="subtractionSoapOut">
+    <wsdl:part name="parameters" element="tns:subtractionResponse" />
+  </wsdl:message>
+  <wsdl:message name="multiplicationSoapIn">
+    <wsdl:part name="parameters" element="tns:multiplication" />
+  </wsdl:message>
+  <wsdl:message name="multiplicationSoapOut">
+    <wsdl:part name="parameters" element="tns:multiplicationResponse" />
+  </wsdl:message>
+  <wsdl:message name="divideSoapIn">
+    <wsdl:part name="parameters" element="tns:divide" />
+  </wsdl:message>
+  <wsdl:message name="divideSoapOut">
+    <wsdl:part name="parameters" element="tns:divideResponse" />
+  </wsdl:message>
   <wsdl:portType name="My_x0020_CustomerServiceSoap">
     <wsdl:operation name="HelloWorld">
       <wsdl:input message="tns:HelloWorldSoapIn" />
@@ -49,6 +133,22 @@
     <wsdl:operation name="GetCustomerNameById">
       <wsdl:input message="tns:GetCustomerNameByIdSoapIn" />
       <wsdl:output message="tns:GetCustomerNameByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="addition">
+      <wsdl:input message="tns:additionSoapIn" />
+      <wsdl:output message="tns:additionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="subtraction">
+      <wsdl:input message="tns:subtractionSoapIn" />
+      <wsdl:output message="tns:subtractionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="multiplication">
+      <wsdl:input message="tns:multiplicationSoapIn" />
+      <wsdl:output message="tns:multiplicationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="divide">
+      <wsdl:input message="tns:divideSoapIn" />
+      <wsdl:output message="tns:divideSoapOut" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="My_x0020_CustomerServiceSoap" type="tns:My_x0020_CustomerServiceSoap">
@@ -71,6 +171,42 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="addition">
+      <soap:operation soapAction="http://DotNetTraining.org/addition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="subtraction">
+      <soap:operation soapAction="http://DotNetTraining.org/subtraction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="multiplication">
+      <soap:operation soapAction="http://DotNetTraining.org/multiplication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="divide">
+      <soap:operation soapAction="http://DotNetTraining.org/divide" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:binding name="My_x0020_CustomerServiceSoap12" type="tns:My_x0020_CustomerServiceSoap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
@@ -85,6 +221,42 @@
     </wsdl:operation>
     <wsdl:operation name="GetCustomerNameById">
       <soap12:operation soapAction="http://DotNetTraining.org/GetCustomerNameById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addition">
+      <soap12:operation soapAction="http://DotNetTraining.org/addition" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="subtraction">
+      <soap12:operation soapAction="http://DotNetTraining.org/subtraction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="multiplication">
+      <soap12:operation soapAction="http://DotNetTraining.org/multiplication" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="divide">
+      <soap12:operation soapAction="http://DotNetTraining.org/divide" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
