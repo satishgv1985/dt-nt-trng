@@ -51,6 +51,8 @@ public partial class loginPage : System.Web.UI.Page
             ddlDistrict.Items.Add(ltDistrict);
             ltDistrict = new ListItem("Mysore", "2");
             ddlDistrict.Items.Add(ltDistrict);
+
+            
         }
         if (ddlState.SelectedValue == "2")
         {
