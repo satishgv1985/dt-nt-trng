@@ -40,12 +40,13 @@
 <body>
     <form id="form1" runat="server" submitdisabledcontrols="true">
     <div>
-    <asp:ValidationSummary ID="vsAllErrors" runat="server" DisplayMode="BulletList"  HeaderText="Please correct the errors" />
-    <br />
+        <asp:ValidationSummary ID="vsAllErrors" runat="server" DisplayMode="BulletList" HeaderText="Please correct the errors" />
+        <br />
         UserName:
         <asp:TextBox ID="txtUserName" runat="server" Text="User Name"></asp:TextBox>
         <asp:RequiredFieldValidator ID="rfvUserName" runat="server" ControlToValidate="txtUserName"
-            ErrorMessage="Please enter UserName" InitialValue="User Name" ForeColor="Green" SetFocusOnError="true">
+            ErrorMessage="Please enter UserName" InitialValue="User Name" ForeColor="Green"
+            SetFocusOnError="true">
         </asp:RequiredFieldValidator>
         <br />
         Password:
@@ -97,7 +98,6 @@
         <asp:RegularExpressionValidator ID="revEmailID" runat="server" ControlToValidate="txtEmailID"
             ErrorMessage="Please enter valid email id." ValidationExpression="[\w-]+@([\w-]+\.)+[\w-]+"></asp:RegularExpressionValidator>
         <br />
-        
         <br />
         <asp:Button ID="btnSignIn" runat="server" Text="Sign In" />
     </div>
