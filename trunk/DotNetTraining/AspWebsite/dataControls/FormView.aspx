@@ -8,7 +8,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:FormView ID="FormView1" runat="server" DefaultMode="Edit" DataSourceID="SqlDataSource"
+        <asp:FormView ID="FormView1" runat="server" DefaultMode="Edit" DataSourceID="SqlDataSource" DataKeyNames="ProductID"
             AllowPaging="true">
             <ItemTemplate>
                 Product ID:
