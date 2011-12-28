@@ -8,8 +8,11 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:FormView ID="FormView1" runat="server" DefaultMode="Edit" DataSourceID="SqlDataSource" DataKeyNames="ProductID"
-            AllowPaging="true">
+      
+    <asp:Label ID="lblMessage" runat="server" Visible="false"></asp:Label>
+        <asp:FormView ID="FormView1" runat="server" DefaultMode="Edit" 
+            DataSourceID="SqlDataSource" DataKeyNames="ProductID"
+            AllowPaging="true" onload="FormView1_Load">
             <ItemTemplate>
                 Product ID:
                 <%#Eval("ProductID")%><br />
@@ -37,7 +40,8 @@
             SelectCommand="SELECT TOP 10 [ProductID], [ProductName], [UnitPrice], [UnitsInStock], [UnitsOnOrder], [Discontinued] FROM [Products]"
             DeleteCommand="DELETE FROM Products WHERE (ProductID = @productId)" 
             UpdateCommand="UPDATE Products SET [ProductName] = @productName, [UnitPrice] = @unitPrice WHERE (ProductID = @productid)"
-            UpdateCommandType="Text" DeleteCommandType="Text">
+            UpdateCommandType="Text" DeleteCommandType="Text" 
+            onupdated="SqlDataSource_Updated">
             <UpdateParameters>
                 <asp:Parameter Name="productName" DbType="String" />
                 <asp:Parameter Name="unitPrice" DbType="Decimal" />

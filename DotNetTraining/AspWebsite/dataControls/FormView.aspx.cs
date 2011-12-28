@@ -11,4 +11,15 @@ public partial class dataControls_FormView : System.Web.UI.Page
     {
 
     }
+    protected void SqlDataSource_Updated(object sender, SqlDataSourceStatusEventArgs e)
+    {
+        //System.Diagnostics.Debugger.Launch();
+        lblMessage.Text = "Updated!!";
+        lblMessage.Visible = true;
+    }
+    protected void FormView1_Load(object sender, EventArgs e)
+    {
+
+        lblMessage.Visible = false;
+    }
 }

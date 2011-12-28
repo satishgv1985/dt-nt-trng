@@ -12,7 +12,7 @@ public partial class state_viewState : System.Web.UI.Page
        
         if (!IsPostBack)
         {
-            ViewState["user"] = "Satish";
+            ViewState["user"] = "yadav";
 
             //System.Diagnostics.Debugger.Launch();
             //lblTime.Text = "PostBack Req New time:" + DateTime.Now.ToString();
