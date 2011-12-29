@@ -50,53 +50,70 @@
         <asp:SqlDataSource ID="SqlDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:NorthwindConnectionString %>"
             SelectCommand="SELECT top 20 [ProductID], [ProductName], [SupplierID], [CategoryID], [QuantityPerUnit], [UnitPrice], [Discontinued] FROM [Products]">
         </asp:SqlDataSource>
-        <asp:GridView ID="gvOrderDetails" runat="server" AutoGenerateColumns="False" 
-            DataKeyNames="OrderID,ProductID" DataSourceID="SqlDataSourceOrderDetails" 
-            EnableModelValidation="True">
+        <asp:GridView ID="gvOrderDetails" runat="server" AutoGenerateColumns="False" DataKeyNames="OrderID,ProductID"
+            DataSourceID="SqlDataSourceOrderDetails" EnableModelValidation="True">
             <Columns>
-                <asp:BoundField DataField="OrderID" HeaderText="OrderID" ReadOnly="True" 
-                    SortExpression="OrderID" />
-                <asp:BoundField DataField="ProductID" HeaderText="ProductID" ReadOnly="True" 
-                    SortExpression="ProductID" />
-                <asp:BoundField DataField="UnitPrice" HeaderText="UnitPrice" 
-                    SortExpression="UnitPrice" />
-                <asp:BoundField DataField="Quantity" HeaderText="Quantity" 
-                    SortExpression="Quantity" />
-                <asp:BoundField DataField="Discount" HeaderText="Discount" 
-                    SortExpression="Discount" />
+                <asp:BoundField DataField="OrderID" HeaderText="OrderID" ReadOnly="True" SortExpression="OrderID" />
+                <asp:BoundField DataField="ProductID" HeaderText="ProductID" ReadOnly="True" SortExpression="ProductID" />
+                <asp:BoundField DataField="UnitPrice" HeaderText="UnitPrice" SortExpression="UnitPrice" />
+                <asp:BoundField DataField="Quantity" HeaderText="Quantity" SortExpression="Quantity" />
+                <asp:BoundField DataField="Discount" HeaderText="Discount" SortExpression="Discount" />
             </Columns>
         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSourceOrderDetails" runat="server" 
-            ConnectionString="<%$ ConnectionStrings:NorthwindConnectionString %>" 
+        <asp:SqlDataSource ID="SqlDataSourceOrderDetails" runat="server" ConnectionString="<%$ ConnectionStrings:NorthwindConnectionString %>"
             SelectCommand="SELECT OrderID, ProductID, UnitPrice, Quantity, Discount FROM [Order Details] WHERE (ProductID = @ProductID)">
             <SelectParameters>
-                <asp:ControlParameter ControlID="gvProducts" Name="ProductID" 
-                    PropertyName="SelectedDataKey.Values['ProductID']" />
+                <asp:ControlParameter ControlID="gvProducts" Name="ProductID" PropertyName="SelectedDataKey.Values['ProductID']" />
             </SelectParameters>
         </asp:SqlDataSource>
-
         <asp:HiddenField ID="hdnSupId" runat="server" />
-        <asp:SqlDataSource ID="SqlDataSourceSupplier" runat="server" 
-            ConnectionString="<%$ ConnectionStrings:NorthwindConnectionString %>" 
+        <asp:SqlDataSource ID="SqlDataSourceSupplier" runat="server" ConnectionString="<%$ ConnectionStrings:NorthwindConnectionString %>"
             SelectCommand="SELECT [SupplierID], [CompanyName], [ContactName] FROM [Suppliers] WHERE ([SupplierID] = @SupplierID)">
             <SelectParameters>
-                <asp:ControlParameter ControlID="hdnSupId" Name="SupplierID" 
-                    PropertyName="Value" Type="Int32" />
+                <asp:ControlParameter ControlID="hdnSupId" Name="SupplierID" PropertyName="Value"
+                    Type="Int32" />
             </SelectParameters>
         </asp:SqlDataSource>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
-            DataKeyNames="SupplierID" DataSourceID="SqlDataSourceSupplier" 
-            EnableModelValidation="True">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="SupplierID"
+            DataSourceID="SqlDataSourceSupplier" EnableModelValidation="True">
             <Columns>
-                <asp:BoundField DataField="SupplierID" HeaderText="SupplierID" 
-                    InsertVisible="False" ReadOnly="True" SortExpression="SupplierID" />
-                <asp:BoundField DataField="CompanyName" HeaderText="CompanyName" 
-                    SortExpression="CompanyName" />
-                <asp:BoundField DataField="ContactName" HeaderText="ContactName" 
-                    SortExpression="ContactName" />
+                <asp:BoundField DataField="SupplierID" HeaderText="SupplierID" InsertVisible="False"
+                    ReadOnly="True" SortExpression="SupplierID" />
+                <asp:BoundField DataField="CompanyName" HeaderText="CompanyName" SortExpression="CompanyName" />
+                <asp:BoundField DataField="ContactName" HeaderText="ContactName" SortExpression="ContactName" />
             </Columns>
         </asp:GridView>
-
+        <asp:GridView ID="GridView2" runat="server" AllowPaging="True" AllowSorting="True"
+            AutoGenerateColumns="False" DataKeyNames="ProductID" DataSourceID="SqlDataSourceProduct"
+            EnableModelValidation="True" CellPadding="4" ForeColor="#333333" 
+            GridLines="None">
+            <AlternatingRowStyle BackColor="White" />
+            <Columns>
+                <asp:CommandField ShowSelectButton="True" />
+                <asp:BoundField DataField="ProductID" HeaderText="ProductID" InsertVisible="False"
+                    ReadOnly="True" SortExpression="ProductID" />
+                <asp:BoundField DataField="ProductName" HeaderText="ProductName" SortExpression="ProductName" />
+                <asp:BoundField DataField="SupplierID" HeaderText="SupplierID" SortExpression="SupplierID" />
+                <asp:BoundField DataField="UnitPrice" HeaderText="UnitPrice" SortExpression="UnitPrice" />
+                <asp:BoundField DataField="UnitsInStock" HeaderText="UnitsInStock" SortExpression="UnitsInStock" />
+                <asp:TemplateField>
+                    <HeaderTemplate>
+                        UnitPrice*UnitInStock
+                    </HeaderTemplate>
+                    <ItemTemplate>
+                     <%#Convert.ToInt32(Eval("UnitsInStock")) * Convert.ToDouble(Eval("UnitPrice"))%>
+                    </ItemTemplate>
+                </asp:TemplateField>
+            </Columns>
+            <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
+            <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
+            <PagerStyle BackColor="#FFCC66" ForeColor="#333333" HorizontalAlign="Center" />
+            <RowStyle BackColor="#FFFBD6" ForeColor="#333333" />
+            <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="Navy" />
+        </asp:GridView>
+        <asp:SqlDataSource ID="SqlDataSourceProduct" runat="server" ConnectionString="<%$ ConnectionStrings:NorthwindConnectionString %>"
+            SelectCommand="SELECT [ProductID], [ProductName], [SupplierID], [UnitPrice], [UnitsInStock] FROM [Products]">
+        </asp:SqlDataSource>
     </div>
     </form>
 </body>
