@@ -24,7 +24,7 @@ public partial class dataControls_gv : System.Web.UI.Page
     }
     protected void gvProducts_SelectedIndexChanged(object sender, EventArgs e)
     {
-        System.Diagnostics.Debugger.Launch();
+        //System.Diagnostics.Debugger.Launch();
         ViewState["ProductSelected"] = gvProducts.SelectedDataKey.Values["ProductID"];
         hdnSupId.Value = gvProducts.SelectedDataKey.Values["SupplierID"].ToString();
       

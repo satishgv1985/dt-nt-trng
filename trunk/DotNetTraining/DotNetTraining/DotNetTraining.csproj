@@ -82,6 +82,7 @@
     <Content Include="yahooStyles.css" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classes\Product.cs" />
     <Compile Include="cssClass.aspx.cs">
       <DependentUpon>cssClass.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
