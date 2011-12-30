@@ -12,6 +12,7 @@ namespace NorthWindDB
     {
         private int _ProductID;
         private string _ProductName;
+        private int _SupplierID;
         public string ProductName
         {
             get
@@ -32,6 +33,17 @@ namespace NorthWindDB
             set
             {
                 _ProductID = value;
+            }
+        }
+        public int SupplierID
+        {
+            get
+            {
+                return _SupplierID;
+            }
+            set
+            {
+                _SupplierID = value;
             }
         }
 
