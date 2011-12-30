@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<orders>
+	<order>
+		<customer id="12345"/>
+		<customername>
+			<firstn>John</firstn>
+			<lastn>Smith</lastn>
+		</customername>
+		<transaction id="12345"/>
+		<shipaddress>
+			<address1>New XYZ Colony</address1>
+			<city>Newyork</city>
+			<state>Narve</state>
+			<zip>560037</zip>
+		</shipaddress>
+		<summary>
+			<item dept="tools">Screwdriver</item>
+			<item dept="tools">Hammer</item>
+		</summary>
+	</order>
+</orders>

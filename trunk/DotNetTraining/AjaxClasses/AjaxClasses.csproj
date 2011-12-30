@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.51116.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -51,11 +54,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AjaxTimerDemo.aspx" />
+    <Content Include="AutoCompleteProducts.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="images\image1.jpg" />
     <Content Include="images\image4.jpg" />
     <Content Include="images\image3.jpg" />
     <Content Include="images\image2.jpg" />
+    <Content Include="Products.asmx" />
     <Content Include="UserNameAvailability.aspx" />
     <Content Include="usernameImages\available.gif" />
     <Content Include="usernameImages\spinner.gif" />
@@ -89,12 +94,23 @@
     <Compile Include="AjaxTimerDemo.aspx.designer.cs">
       <DependentUpon>AjaxTimerDemo.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AutoCompleteProducts.aspx.cs">
+      <DependentUpon>AutoCompleteProducts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AutoCompleteProducts.aspx.designer.cs">
+      <DependentUpon>AutoCompleteProducts.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products.asmx.cs">
+      <DependentUpon>Products.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">

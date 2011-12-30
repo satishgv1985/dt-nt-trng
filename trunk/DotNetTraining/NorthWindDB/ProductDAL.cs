@@ -20,14 +20,57 @@ namespace NorthWindDB
             //
         }
 
+        public static int InsertProduct(Product p)
+        {
+            string sql2 = @"INSERT INTO Products
+           ([ProductName]
+           ,[SupplierID]
+           ,[CategoryID]
+           ,[QuantityPerUnit]
+           ,[UnitPrice]
+           ,[UnitsInStock]
+           ,[UnitsOnOrder]
+           ,[ReorderLevel]
+           ,[Discontinued]
+           ,[Date_Modified])
+     VALUES
+           (" +p.ProductName + "'Bata',1006,2007,'10 boxes x 20 bags',180,10,5,6,true,) ";
+
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["NorthwindConnectionString"].ConnectionString);
+            SqlCommand cmd = new SqlCommand("", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlParameter param = new SqlParameter("productName", p.ProductName);
+            cmd.Parameters.Add(param);
+
+            int t=cmd.ExecuteNonQuery();
+
+            return t;
+        }
+
         public static List<Product> GetAllProducts()
         {
             string sql = @"SELECT ProductID, ProductName FROM Products";
+            string sql2 = @"INSERT INTO Products
+           ([ProductName]
+           ,[SupplierID]
+           ,[CategoryID]
+           ,[QuantityPerUnit]
+           ,[UnitPrice]
+           ,[UnitsInStock]
+           ,[UnitsOnOrder]
+           ,[ReorderLevel]
+           ,[Discontinued]
+           ,[Date_Modified])
+     VALUES
+           ('Bata',1006,2007,'10 boxes x 20 bags',180,10,5,6,true,) ";
+
             using (SqlConnection myConnection = new
               SqlConnection(ConfigurationManager.ConnectionStrings[
               "NorthwindConnectionString"].ConnectionString))
             {
                 SqlCommand myCommand = new SqlCommand(sql, myConnection);
+                myConnection.Open();
+                SqlCommand myCommand1 = new SqlCommand(sql2, myConnection);
                 myConnection.Open();
                 SqlDataReader reader =
                  myCommand.ExecuteReader(CommandBehavior.CloseConnection);
@@ -71,9 +114,9 @@ namespace NorthWindDB
                     pObj.ProductName = p.ProductName;
                     break;
                 }
-                
+
             }
-            
+
             return pObj;
         }
     }
