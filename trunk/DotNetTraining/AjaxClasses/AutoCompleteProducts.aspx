@@ -13,10 +13,17 @@
     <div>
         <asp:ScriptManager ID="ScriptManager1" runat="server" >
         </asp:ScriptManager>
-        <asp:TextBox ID="txtProductSearch" runat="server"></asp:TextBox>
+       Products from service <asp:TextBox ID="txtProductSearch" runat="server"></asp:TextBox>
         <asp:AutoCompleteExtender ID="AutoCompleteExtender1" runat="server" TargetControlID="txtProductSearch" 
             UseContextKey="True" ServiceMethod="GetProducts" MinimumPrefixLength="1" CompletionSetCount="5" ServicePath="~/Products.asmx">
         </asp:AutoCompleteExtender>
+
+      Products from .cs file:  <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        <asp:AutoCompleteExtender ID="AutoCompleteExtender2" runat="server" TargetControlID="TextBox1" 
+            UseContextKey="True" ServiceMethod="GetProductsFromBack" MinimumPrefixLength="2" CompletionSetCount="5" >
+        </asp:AutoCompleteExtender>
+
+
     </div>
     </form>
 </body>

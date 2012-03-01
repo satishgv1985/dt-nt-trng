@@ -1,13 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <students>
-  <student>
+  <student id="1">
     <rollNo>A1</rollNo>
     <name>Amit</name>
     <marks>90</marks>
+    <subjects>
+      <maths>80</maths>
+      <science>90</science>
+    </subjects>
   </student>
-  <student>
+  <student id="2">
     <rollNo>A2</rollNo>
     <name>Budhha</name>
     <marks>35</marks>
+    <subjects>
+      <maths>77</maths>
+      <science>8</science>
+    </subjects>
   </student>
 </students>

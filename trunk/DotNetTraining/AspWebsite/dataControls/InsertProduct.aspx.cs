@@ -11,7 +11,13 @@ public partial class dataControls_InsertProduct : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!IsPostBack)
+
+
         {
+
+            NorthWindDB.Product p= new NorthWindDB.Product();
+            p.ProductName = "p1";
+            int a=NorthWindDB.ProductDAL.InsertProduct(p);
             //List<Suppliers> lSup =new List<Suppliers>();
             //lSup = SupplierDAL.GetAllSuppliers();
 
@@ -31,14 +37,15 @@ public partial class dataControls_InsertProduct : System.Web.UI.Page
         prod.ProductName = txtPName.Text;
         prod.SupplierID = Convert.ToInt32(ddlSupplier.SelectedValue);
 
-        int retVal = ProductDAL.InsertProduct(prod);
-        if (retVal == 1)
-        {
-            lblMessage.Text = "Inserted Successfully";
-            lblMessage.Visible = true;
-        }
-        else
-            lblMessage.Text = "Some Error occured";
+        int retVal;
+            //= ProductDAL.InsertProduct(prod);
+        //if (retVal == 1)
+        //{
+        //    lblMessage.Text = "Inserted Successfully";
+        //    lblMessage.Visible = true;
+        //}
+        //else
+        //    lblMessage.Text = "Some Error occured";
     }
     protected void ddlSupplier_SelectedIndexChanged(object sender, EventArgs e)
     {

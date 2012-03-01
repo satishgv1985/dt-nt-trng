@@ -16,7 +16,9 @@ namespace AjaxClasses
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
+            lblDate.Text = DateTime.Now.ToString();
             lblAjaxDate.Text = DateTime.Now.ToString();
+            Label1.Text = DateTime.Now.ToString();
         }
     }
 }

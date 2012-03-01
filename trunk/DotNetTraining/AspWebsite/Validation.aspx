@@ -84,7 +84,7 @@
             <asp:ListItem Text="IT"></asp:ListItem>
         </asp:CheckBoxList>
         <asp:CustomValidator ID="cvDepartment" runat="server" OnServerValidate="Department_ServerValidate"
-            ErrorMessage="Please select atleast one Department" ClientValidationFunction="validate_Department"></asp:CustomValidator>
+            ErrorMessage="Please select atleast one Department" ></asp:CustomValidator>
         <asp:Label ID="lblError" runat="server"></asp:Label>
         <br />
         Mobile Number:<asp:TextBox ID="txtMobileNumber" runat="server" MaxLength="10"></asp:TextBox>

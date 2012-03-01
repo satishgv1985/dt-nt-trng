@@ -53,14 +53,29 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Accordion.aspx" />
     <Content Include="AjaxTimerDemo.aspx" />
+    <Content Include="Animation.aspx" />
+    <Content Include="animation.js" />
+    <Content Include="AutoComplete.aspx" />
     <Content Include="AutoCompleteProducts.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="fbImages.aspx" />
+    <Content Include="fbLike.aspx" />
+    <Content Include="fbPhotos.aspx" />
+    <Content Include="images\Blue hills.jpg" />
     <Content Include="images\image1.jpg" />
     <Content Include="images\image4.jpg" />
     <Content Include="images\image3.jpg" />
     <Content Include="images\image2.jpg" />
+    <Content Include="images\Sunset.jpg" />
+    <Content Include="images\VerticalPicture.jpg" />
+    <Content Include="images\Water lilies.jpg" />
+    <Content Include="images\Winter.jpg" />
     <Content Include="Products.asmx" />
+    <Content Include="ProgressDemo.aspx" />
+    <Content Include="SlideShow.aspx" />
+    <Content Include="StyleSheet.css" />
     <Content Include="UserNameAvailability.aspx" />
     <Content Include="usernameImages\available.gif" />
     <Content Include="usernameImages\spinner.gif" />
@@ -87,12 +102,33 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Accordion.aspx.cs">
+      <DependentUpon>Accordion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accordion.aspx.designer.cs">
+      <DependentUpon>Accordion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AjaxTimerDemo.aspx.cs">
       <DependentUpon>AjaxTimerDemo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AjaxTimerDemo.aspx.designer.cs">
       <DependentUpon>AjaxTimerDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Animation.aspx.cs">
+      <DependentUpon>Animation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Animation.aspx.designer.cs">
+      <DependentUpon>Animation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AutoComplete.aspx.cs">
+      <DependentUpon>AutoComplete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AutoComplete.aspx.designer.cs">
+      <DependentUpon>AutoComplete.aspx</DependentUpon>
     </Compile>
     <Compile Include="AutoCompleteProducts.aspx.cs">
       <DependentUpon>AutoCompleteProducts.aspx</DependentUpon>
@@ -108,9 +144,37 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="fbImages.aspx.cs">
+      <DependentUpon>fbImages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fbImages.aspx.designer.cs">
+      <DependentUpon>fbImages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fbLike.aspx.cs">
+      <DependentUpon>fbLike.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fbLike.aspx.designer.cs">
+      <DependentUpon>fbLike.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fbPhotos.aspx.cs">
+      <DependentUpon>fbPhotos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fbPhotos.aspx.designer.cs">
+      <DependentUpon>fbPhotos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Products.asmx.cs">
       <DependentUpon>Products.asmx</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProgressDemo.aspx.cs">
+      <DependentUpon>ProgressDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgressDemo.aspx.designer.cs">
+      <DependentUpon>ProgressDemo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">

@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+
+        google.load("feeds", "1");
+
+        function initialize() {
+            var feed = new google.feeds.Feed("http://news.google.com/news?ned=us&topic=h&output=rss");
+            var noOf = document.getElementById('noOfEntries');
+            if (noOf == null)
+                feed.setNumEntries(5);
+            else
+                feed.setNumEntries(noOf.value);
+
+            feed.load(function (result) {
+                if (!result.error) {
+                    var container = document.getElementById("feed");
+                    container.innerHTML = '';
+                    for (var i = 0; i < result.feed.entries.length; i++) {
+                        var entry = result.feed.entries[i];
+                        var div = document.createElement("div");
+
+                        div.appendChild(document.createTextNode(entry.title));
+                        container.appendChild(div);
+                    }
+                }
+            });
+        }
+        google.setOnLoadCallback(initialize);
+
+    </script>
+  </head>
+  <body>
+  <input type="text" id="noOfEntries" />
+  <input type="submit" value="submit" onclick="javascript:initialize()" />
+    <div id="feed"></div>
+  </body>
+</html>
