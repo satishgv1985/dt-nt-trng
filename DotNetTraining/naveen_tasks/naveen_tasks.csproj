@@ -64,6 +64,10 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="xml\students.xml" />
+    <Content Include="xml\XMLFile1.xml" />
+    <Content Include="xml\xmlRead.aspx" />
+    <Content Include="xml\xmlWrite.aspx" />
     <Content Include="Yahoo.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -97,6 +101,20 @@
     <Compile Include="W3SchoolsMasterPage.master.cs">
       <DependentUpon>W3SchoolsMasterPage.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xml\xmlRead.aspx.cs">
+      <DependentUpon>xmlRead.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xml\xmlRead.aspx.designer.cs">
+      <DependentUpon>xmlRead.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xml\xmlWrite.aspx.cs">
+      <DependentUpon>xmlWrite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xml\xmlWrite.aspx.designer.cs">
+      <DependentUpon>xmlWrite.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

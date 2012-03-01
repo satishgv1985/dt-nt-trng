@@ -11,13 +11,4 @@ public partial class dataControls_DataSources : System.Web.UI.Page
     {
 
     }
-
-    public bool GetDiscontinued(int num)
-    {
-        if (num == 0)
-            return true ;
-        else
-            return false;
-    }
-
 }

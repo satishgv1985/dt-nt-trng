@@ -43,5 +43,11 @@ namespace AjaxClasses
             con.Close();
 
         }
+
+        protected void btnError_Click(object sender, EventArgs e)
+        {
+            Exception ex = new Exception();
+            throw ex;
+        }
     }
 }

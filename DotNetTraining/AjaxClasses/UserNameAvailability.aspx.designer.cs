@@ -58,6 +58,24 @@ namespace AjaxClasses {
         protected global::System.Web.UI.WebControls.Label lbMessage;
         
         /// <summary>
+        /// btnError control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnError;
+        
+        /// <summary>
+        /// ErrMessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ErrMessage;
+        
+        /// <summary>
         /// TextBox1 control.
         /// </summary>
         /// <remarks>

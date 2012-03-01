@@ -37,17 +37,31 @@
         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
             <ContentTemplate>
                 <asp:Label ID="lbMessage" runat="server"></asp:Label>
+
+                <asp:Button ID="btnError" runat="server" Text="Throw exception" 
+            onclick="btnError_Click" />
+            <asp:Label ID="ErrMessage" runat="server"></asp:Label>
             </ContentTemplate>
+           
             <Triggers>
                 <asp:AsyncPostBackTrigger ControlID="txtUserName" />
             </Triggers>
+
+
         </asp:UpdatePanel>
         <br />
         Password:
         <asp:TextBox runat="server" ID="TextBox1" AutoPostBack="true" />
+
+        <br />
+        <br />
+        
         <script language="javascript" type="text/javascript">
             // Hook the InitializeRequest event.
             Sys.WebForms.PageRequestManager.getInstance().add_initializeRequest(InitializeRequest);
+
+            var manager = Sys.WebForms.PageRequestManager.getInstance();
+            manager.add_endRequest(endRequest);
 
             function InitializeRequest(sender, args) {
                 // Change div's CSS class and text content.
@@ -55,6 +69,13 @@
                 $get('lbMessage').innerHTML = 'Checking availability...';
 
             }
+
+
+            function endRequest(sender, args) {
+                $get("ErrMessage").innerHTML = args.get_error().message;
+                args.set_errorHandled(true);
+            }
+
         </script>
     </div>
     </form>

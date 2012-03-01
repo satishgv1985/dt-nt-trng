@@ -14,17 +14,30 @@
         <asp:Label ID="lblDate" runat="server"></asp:Label>
         <hr />
         <br />
-        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server"  UpdateMode="Conditional">
             <ContentTemplate>
                 <asp:Label ID="lblAjaxDate" runat="server"></asp:Label>
                 <br />
                 <br />
+                
             </ContentTemplate>
             <Triggers>
+                
                 <asp:AsyncPostBackTrigger ControlID="btnSubmit" />
             </Triggers>
         </asp:UpdatePanel>
-        <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+         <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+          <asp:UpdatePanel ID="UpdatePanel2" runat="server"  UpdateMode="Conditional">
+            <ContentTemplate>
+              Panel2:  <asp:Label ID="Label1" runat="server"></asp:Label>
+                <br />
+                <br />
+            </ContentTemplate>
+            <Triggers>
+               
+            </Triggers>
+        </asp:UpdatePanel>
+       
     </div>
     </form>
 </body>

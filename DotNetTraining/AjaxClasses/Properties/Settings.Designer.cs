@@ -26,10 +26,20 @@ namespace AjaxClasses.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:1256/Customer.asmx")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:49291/Customer.asmx")]
         public string AjaxClasses_localhost_My_x0020_CustomerService {
             get {
                 return ((string)(this["AjaxClasses_localhost_My_x0020_CustomerService"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:49291/AspWebsite/AutoComplete.asmx")]
+        public string AjaxClasses_localhost1_AutoComplete {
+            get {
+                return ((string)(this["AjaxClasses_localhost1_AutoComplete"]));
             }
         }
     }

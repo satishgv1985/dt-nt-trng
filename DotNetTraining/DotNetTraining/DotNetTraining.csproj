@@ -52,6 +52,9 @@
     <Content Include="cssClass.aspx" />
     <Content Include="CssClass2.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="feeds.aspx" />
+    <Content Include="feeds.html" />
+    <Content Include="FeedsDisplay.aspx" />
     <Content Include="firefox.png" />
     <Content Include="gmail.aspx" />
     <Content Include="google.png" />
@@ -65,6 +68,7 @@
     <Content Include="jsYahooRegistration.aspx" />
     <Content Include="mgyhp_sm.png" />
     <Content Include="news.aspx" />
+    <Content Include="NewsFeed.ascx" />
     <Content Include="Orkut.aspx" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
@@ -103,6 +107,20 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="feeds.aspx.cs">
+      <DependentUpon>feeds.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="feeds.aspx.designer.cs">
+      <DependentUpon>feeds.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeedsDisplay.aspx.cs">
+      <DependentUpon>FeedsDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeedsDisplay.aspx.designer.cs">
+      <DependentUpon>FeedsDisplay.aspx</DependentUpon>
     </Compile>
     <Compile Include="gmail.aspx.cs">
       <DependentUpon>gmail.aspx</DependentUpon>
@@ -145,6 +163,13 @@
     </Compile>
     <Compile Include="news.aspx.designer.cs">
       <DependentUpon>news.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewsFeed.ascx.cs">
+      <DependentUpon>NewsFeed.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewsFeed.ascx.designer.cs">
+      <DependentUpon>NewsFeed.ascx</DependentUpon>
     </Compile>
     <Compile Include="Orkut.aspx.cs">
       <DependentUpon>Orkut.aspx</DependentUpon>

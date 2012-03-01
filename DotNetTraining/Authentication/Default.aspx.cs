@@ -11,7 +11,10 @@ namespace Authentication
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+            if (User.IsInRole("admin"))
+                hlAdmin.Visible = true;
+            else
+                hlAdmin.Visible = false;
         }
     }
 }
